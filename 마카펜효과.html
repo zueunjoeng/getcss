@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>마커펜효과</title>
     <style>
         h1 span{
             position:relative;
@@ -19,12 +19,21 @@
             height:100%;
             background-color: #ffff00;
             transition: 0.5s;
+            transition-delay: 0.5s;
+            animation: widthani 0.5s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+
         }
 
-        h1:hover > span:before{
-            width:100%
+        @keyframes widthani{
+            0%{
+                width:0;
+            }
+            100%{
+                width:100%;
+            }
         }
-
 
     </style>
 </head>
