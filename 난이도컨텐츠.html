@@ -43,13 +43,18 @@
             align-items: center;
         }
         @media (max-width:990px){ 
-            #about{ 
+            /* #about{ 
                 height: calc(100vw + 50px);
                 display: block;
                 padding: 5rem 0 0 ;
                 text-align: center;
                 background-position: -30vw center;
-                /*background-position: right(x축) center(y축); 해도 돼고 background-position: calc() center; calc을 써서 해도 됨*/
+            } */
+            #about{
+                height: calc(100vw + 50px);
+                flex-direction: column;
+                background-image: url('./img/mobg.jpg');
+                /* background만 하면 url뒤에 미지정이라 무너짐. image를 붙이면 이미지만 수정가능 */
             }
        
         }
