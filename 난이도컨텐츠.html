@@ -33,6 +33,26 @@
         }
 
         /* https://yoksel.github.io/url-encoder/ */
+
+        #about{
+            height:56vw;
+            background: url('./img/bg.jpg') no-repeat center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width:990px){ 
+            #about{ 
+                height: calc(100vw + 50px);
+                display: block;
+                padding: 5rem 0 0 ;
+                text-align: center;
+                background-position: -30vw center;
+                /*background-position: right(x축) center(y축); 해도 돼고 background-position: calc() center; calc을 써서 해도 됨*/
+            }
+       
+        }
     </style>
 </head>
 <body>
@@ -47,5 +67,9 @@
         <dd class="checksvg d-flex"><span>리스트들</span></dd>
         <dd class="checksvg d-flex"><span>리스트들</span></dd>
     </dl>
+
+    <section id="about">
+        <h2>타이틀 소개글 노출</h2>
+    </section>
 </body>
 </html>
